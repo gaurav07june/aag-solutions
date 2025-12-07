@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./normalize.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./main.css" />
+  <title>AAG Solutions</title>
+</head>
+
+<body>
+  <header>
+    <h1 style="text-align:center; margin-top: 1rem;">AAG Solutions</h1>
+  </header>
+
+  <form class="task-form" id="customer-form" style="max-width: 600px; margin: 2rem auto;">
+    <h4>Customer</h4>
+
+    <div class="form-control">
+      <label for="name" style="display:block; margin-bottom: 0.25rem;">Name</label>
+      <input type="text" id="name" name="name" class="task-input" placeholder="Enter name" required />
+    </div>
+
+    <div class="form-control">
+      <label for="mobileNumber" style="display:block; margin-bottom: 0.25rem;">Mobile Number</label>
+      <input type="text" id="mobileNumber" name="mobileNumber" class="task-input" placeholder="Enter mobile number" />
+    </div>
+
+    <div class="form-control">
+      <label for="address" style="display:block; margin-bottom: 0.25rem;">Address</label>
+      <input type="text" id="address" name="address" class="task-input" placeholder="Enter address" />
+    </div>
+
+    <div class="form-control">
+      <label for="email" style="display:block; margin-bottom: 0.25rem;">Email</label>
+      <input type="email" id="email" name="email" class="task-input" placeholder="Enter email" />
+    </div>
+
+    <div class="form-control" style="margin-top: 1rem;">
+      <button type="submit" class="btn submit-btn">submit</button>
+    </div>
+
+    <div class="form-alert"></div>
+  </form>
+
+  <div style="text-align:center; margin-bottom: 2rem;">
+    <a href="/customer.html" class="btn" style="text-decoration:none;">View Customers</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./customer-form.js"></script>
+</body>
+
+</html>
